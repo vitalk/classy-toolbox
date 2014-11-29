@@ -1,0 +1,17 @@
+{
+  "name": "classy-toolbox",
+  "version": "0.1.0",
+  "authors": [
+    "Vital Kudzelka <vital.kudzelka@gmail.com>"
+  ],
+  "description": "Classy toolbox",
+  "main": "objects.toolbox.less",
+  "keywords": [
+    "css",
+    "oocss"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "classy-defaults": "~0.1.0"
+  }
+}

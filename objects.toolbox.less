@@ -1,0 +1,33 @@
+// Toolbox.
+//
+// Toolbox is usually additional content that hidden and appears when
+// you hover to parent element. Typically placed at upper-right corner
+// of the parent.
+//
+// Example:
+//
+// <div class="has-tools">
+//     Hover me to show toolbox
+//     <div class="tools">
+//         <div class="tool">i am toolbox</div>
+//     </div>
+// </div>
+//
+// Styleguide 4.1.
+
+@classy-toolbox-namespace: ~"@{classy-namespace}tools";
+
+// 1. Use absolute position to show toolbox.
+// 2. Show toolbox only on hover on the parent box.
+// 3. Show toolbox at upper-right corner of the parent.
+.has-@{classy-toolbox-namespace} {
+    position: relative; // 1
+}
+.@{classy-toolbox-namespace} {
+    position: absolute; // 1
+    display: none; // 2
+    top: 0; // 3
+    right: 0; // 3
+
+    .has-@{classy-toolbox-namespace}:hover > & { display: inline-block; } // 2
+}
